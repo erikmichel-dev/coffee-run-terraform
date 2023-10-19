@@ -16,3 +16,19 @@ terraform {
 provider "aws" {
   region = "eu-south-2"
 }
+
+module "lambda_functions" {
+  source = "../../modules/lambda_functions"
+
+  infra_env = "dev"
+}
+
+module "api_app" {
+  source = "../../modules/api_gateway"
+
+  infra_env         = var.infra_env
+  daily_coffee_name = module.lambda_functions.daily_coffee_name
+  daily_coffee_arn  = module.lambda_functions.daily_coffee_arn
+
+  depends_on = [module.lambda_functions]
+}
