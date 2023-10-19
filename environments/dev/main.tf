@@ -16,3 +16,9 @@ terraform {
 provider "aws" {
   region = "eu-south-2"
 }
+
+module "lambda_functions" {
+  source = "../../modules/lambda_functions"
+
+  infra_env = "dev"
+}
