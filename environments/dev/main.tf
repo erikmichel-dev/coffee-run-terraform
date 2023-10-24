@@ -32,3 +32,9 @@ module "api_app" {
 
   depends_on = [module.lambda_functions]
 }
+
+module "dynamodb_tables" {
+  source = "../../modules/dynamo_db"
+
+  infra_env = var.infra_env
+}
