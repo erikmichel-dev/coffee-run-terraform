@@ -20,7 +20,9 @@ provider "aws" {
 module "lambda_functions" {
   source = "../../modules/lambda_functions"
 
-  infra_env = "dev"
+  infra_env              = var.infra_env
+  region                 = var.region
+  coffee_pool_table_name = module.dynamodb_tables.coffee_pool_table_name
 }
 
 module "api_app" {
@@ -31,4 +33,10 @@ module "api_app" {
   daily_coffee_arn  = module.lambda_functions.daily_coffee_arn
 
   depends_on = [module.lambda_functions]
+}
+
+module "dynamodb_tables" {
+  source = "../../modules/dynamo_db"
+
+  infra_env = var.infra_env
 }
