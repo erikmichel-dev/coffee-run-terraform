@@ -20,7 +20,9 @@ provider "aws" {
 module "lambda_functions" {
   source = "../../modules/lambda_functions"
 
-  infra_env = "dev"
+  infra_env              = var.infra_env
+  region                 = var.region
+  coffee_pool_table_name = module.dynamodb_tables.coffee_pool_table_name
 }
 
 module "api_app" {
