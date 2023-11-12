@@ -281,420 +281,420 @@
       "origin": "American"
     },
     {
-      "coffee_id": "41",
+      "coffee_id": "1",
       "name": "Thai Iced Coffee",
       "description": "Coffee's nice combination of sugar, spice, and ice.",
       "tier": "Uncommon",
       "origin": "Thai"
     },
     {
-      "coffee_id": "42",
+      "coffee_id": "2",
       "name": "Honey Lavender Latte",
       "description": "Zen garden vibes with coffee.",
       "tier": "Uncommon",
       "origin": "American Fusion"
     },
     {
-      "coffee_id": "43",
+      "coffee_id": "3",
       "name": "Brown Sugar Cinnamon Latte",
       "description": "Coffee kisses with cinnamon toast.",
       "tier": "Uncommon",
       "origin": "American"
     },
     {
-      "coffee_id": "44",
+      "coffee_id": "4",
       "name": "Lavender Mocha",
       "description": "Cozy yet fancy rendezvous of chocolate and lavender.",
       "tier": "Uncommon",
       "origin": "American Fusion"
     },
     {
-      "coffee_id": "45",
+      "coffee_id": "5",
       "name": "Lavender Iced Coffee",
       "description": "Coffee cools off with a hint of lavender.",
       "tier": "Uncommon",
       "origin": "American Fusion"
     },
     {
-      "coffee_id": "46",
+      "coffee_id": "6",
       "name": "Raspberry Mocha",
       "description": "Espresso with a berry delightful twist.",
       "tier": "Uncommon",
       "origin": "American"
     },
     {
-      "coffee_id": "47",
+      "coffee_id": "7",
       "name": "Almond Joy Latte",
       "description": "Coffee's beach vacation with a nutty, coconut twist.",
       "tier": "Uncommon",
       "origin": "American"
     },
     {
-      "coffee_id": "48",
+      "coffee_id": "8",
       "name": "Salted Caramel Macchiato",
       "description": "Espresso's sweet and salty charm.",
       "tier": "Uncommon",
       "origin": "American"
     },
     {
-      "coffee_id": "49",
+      "coffee_id": "9",
       "name": "Golden Latte",
       "description": "Coffee embarks on a golden treasure hunt with turmeric.",
       "tier": "Uncommon",
       "origin": "American Fusion"
     },
     {
-      "coffee_id": "50",
+      "coffee_id": "10",
       "name": "Mexican Hot Chocolate",
       "description": "Coffee's spirited cocoa cousin.",
       "tier": "Uncommon",
       "origin": "Mexican"
     },
     {
-      "coffee_id": "51",
+      "coffee_id": "11",
       "name": "Tuxedo Mocha",
       "description": "Coffee's monochrome fashionista of chocolate.",
       "tier": "Uncommon",
       "origin": "American"
     },
     {
-      "coffee_id": "52",
+      "coffee_id": "12",
       "name": "Caramel Pecan Mocha",
       "description": "Coffee with a flair for caramel and pecans.",
       "tier": "Uncommon",
       "origin": "American"
     },
     {
-      "coffee_id": "53",
+      "coffee_id": "13",
       "name": "Dutch Bros Coffee",
       "description": "Wild, colorful coffee adventures.",
       "tier": "Uncommon",
       "origin": "American"
     },
     {
-      "coffee_id": "54",
+      "coffee_id": "14",
       "name": "Café Bombón",
       "description": "Coffee and condensed milk create fireworks.",
       "tier": "Uncommon",
       "origin": "Spanish"
     },
     {
-      "coffee_id": "55",
+      "coffee_id": "15",
       "name": "Irish Cream",
       "description": "Coffee with a leprechaun's creamy charm.",
       "tier": "Uncommon",
       "origin": "Irish"
     },
     {
-      "coffee_id": "56",
+      "coffee_id": "16",
       "name": "Flat Black",
       "description": "Espresso-charged twin of Flat White.",
       "tier": "Uncommon",
       "origin": "Australian"
     },
     {
-      "coffee_id": "57",
+      "coffee_id": "17",
       "name": "Vienna Mélange",
       "description": "Coffee dons a whipped cream tuxedo.",
       "tier": "Uncommon",
       "origin": "Austrian"
     },
     {
-      "coffee_id": "58",
+      "coffee_id": "18",
       "name": "Viennese Mocha",
       "description": "Coffee's sweet dreams wrapped in whipped cream.",
       "tier": "Uncommon",
       "origin": "Austrian"
     },
     {
-      "coffee_id": "59",
+      "coffee_id": "19",
       "name": "Cardamom Coffee",
       "description": "Coffee infused with the magic of cardamom spice.",
       "tier": "Uncommon",
       "origin": "Middle Eastern"
     },
     {
-      "coffee_id": "60",
+      "coffee_id": "20",
       "name": "Maple Pecan Latte",
       "description": "Coffee's spirited companion to pancakes.",
       "tier": "Uncommon",
       "origin": "American"
     },
     {
-      "coffee_id": "61",
+      "coffee_id": "21",
       "name": "Ethiopian Yirgacheffe",
       "description": "Where coffee beans dare to be fruity.",
       "tier": "Uncommon",
       "origin": "Ethiopian"
     },
     {
-      "coffee_id": "62",
+      "coffee_id": "22",
       "name": "Toffee Nut Latte",
       "description": "Coffee twists into a nutty, toffee embrace.",
       "tier": "Uncommon",
       "origin": "American"
     },
     {
-      "coffee_id": "63",
+      "coffee_id": "23",
       "name": "Turkish Delight",
       "description": "Spiced like a sultan's dream.",
       "tier": "Uncommon",
       "origin": "Turkish"
     },
     {
-      "coffee_id": "64",
+      "coffee_id": "24",
       "name": "Red Espresso",
       "description": "Rooibos tea and coffee find harmony.",
       "tier": "Uncommon",
       "origin": "South African"
     },
     {
-      "coffee_id": "65",
+      "coffee_id": "25",
       "name": "Kopi Tubruk",
       "description": "Indonesian coffee with sugar, spice, and everything nice.",
       "tier": "Uncommon",
       "origin": "Indonesian"
     },
     {
-      "coffee_id": "66",
+      "coffee_id": "1",
       "name": "Butterscotch Caramel Latte",
       "description": "Coffee embraces butterscotch's sweet charm.",
       "tier": "Rare",
       "origin": "American"
     },
     {
-      "coffee_id": "67",
+      "coffee_id": "2",
       "name": "Sage Latte",
       "description": "Coffee with a mystical, herby twist.",
       "tier": "Rare",
       "origin": "American Fusion"
     },
     {
-      "coffee_id": "68",
+      "coffee_id": "3",
       "name": "Lemon Espresso",
       "description": "Zesty espresso lifts your caffeine spirits.",
       "tier": "Rare",
       "origin": "American Fusion"
     },
     {
-      "coffee_id": "69",
+      "coffee_id": "4",
       "name": "Honey Almond Latte",
       "description": "Coffee dances with honey and nut flavors.",
       "tier": "Rare",
       "origin": "American"
     },
     {
-      "coffee_id": "70",
+      "coffee_id": "5",
       "name": "Pineapple Espresso",
       "description": "Espresso transforms into a tropical island escape.",
       "tier": "Rare",
       "origin": "American Fusion"
     },
     {
-      "coffee_id": "71",
+      "coffee_id": "6",
       "name": "Tahini Espresso",
       "description": "Espresso's nutty waltz with sesame.",
       "tier": "Rare",
       "origin": "Middle Eastern"
     },
     {
-      "coffee_id": "72",
+      "coffee_id": "7",
       "name": "Ginger Snap Latte",
       "description": "Coffee with a spicy ginger personality.",
       "tier": "Rare",
       "origin": "American"
     },
     {
-      "coffee_id": "73",
+      "coffee_id": "8",
       "name": "Cherry Almond Mocha",
       "description": "Coffee's trio of chocolate, cherry, and almond.",
       "tier": "Rare",
       "origin": "American"
     },
     {
-      "coffee_id": "74",
+      "coffee_id": "9",
       "name": "Birthday Cake Latte",
       "description": "Coffee is the birthday wish and the cupcake dream.",
       "tier": "Rare",
       "origin": "American"
     },
     {
-      "coffee_id": "75",
+      "coffee_id": "10",
       "name": "S'mores Coffee",
       "description": "Coffee's campfire experience, with marshmallows optional.",
       "tier": "Rare",
       "origin": "American"
     },
     {
-      "coffee_id": "76",
+      "coffee_id": "11",
       "name": "Chocolate Cherry Mocha",
       "description": "Chocolate coffee kissed by cherries.",
       "tier": "Rare",
       "origin": "American"
     },
     {
-      "coffee_id": "77",
+      "coffee_id": "12",
       "name": "Snickers Coffee",
       "description": "Coffee enjoys a delightful candy bar twist.",
       "tier": "Rare",
       "origin": "American"
     },
     {
-      "coffee_id": "78",
+      "coffee_id": "13",
       "name": "Mint Chocolate Chip Mocha",
       "description": "Coffee with a cool, minty zing.",
       "tier": "Rare",
       "origin": "American"
     },
     {
-      "coffee_id": "79",
+      "coffee_id": "14",
       "name": "Espresso Romano",
       "description": "Espresso zests up Italian zest with lemon.",
       "tier": "Rare",
       "origin": "Italian"
     },
     {
-      "coffee_id": "80",
+      "coffee_id": "15",
       "name": "Lemon Poppy Seed Latte",
       "description": "A zesty and crunchy coffee surprise.",
       "tier": "Rare",
       "origin": "American"
     },
     {
-      "coffee_id": "81",
+      "coffee_id": "16",
       "name": "Coconut Oil Coffee",
       "description": "Coffee finds a tropical twin.",
       "tier": "Rare",
       "origin": "American Fusion"
     },
     {
-      "coffee_id": "82",
+      "coffee_id": "17",
       "name": "Guatemalan Antigua",
       "description": "Coffee brings Mayan mornings in a cup.",
       "tier": "Rare",
       "origin": "Guatemalan"
     },
     {
-      "coffee_id": "83",
+      "coffee_id": "18",
       "name": "Green Tea Latte",
       "description": "Coffee's vibrant rendezvous with matcha.",
       "tier": "Rare",
       "origin": "Japanese Fusion"
     },
     {
-      "coffee_id": "84",
+      "coffee_id": "1",
       "name": "Rocky Road Mocha",
       "description": "Coffee's nutty path filled with marshmallows.",
       "tier": "Epic",
       "origin": "American"
     },
     {
-      "coffee_id": "85",
+      "coffee_id": "2",
       "name": "Lavender Honey Latte",
       "description": "Coffee with a heart scented by lavender.",
       "tier": "Epic",
       "origin": "American Fusion"
     },
     {
-      "coffee_id": "86",
+      "coffee_id": "3",
       "name": "Butter Pecan Latte",
       "description": "Coffee reveals its secret twin from Southern pecan pie.",
       "tier": "Epic",
       "origin": "American"
     },
     {
-      "coffee_id": "87",
+      "coffee_id": "4",
       "name": "Chococcino",
       "description": "Double the trouble with double the chocolate.",
       "tier": "Epic",
       "origin": "American"
     },
     {
-      "coffee_id": "88",
+      "coffee_id": "5",
       "name": "Vietnamese Egg Coffee",
       "description": "Vietnam's quirky genius combines eggs and coffee.",
       "tier": "Epic",
       "origin": "Vietnamese"
     },
     {
-      "coffee_id": "89",
+      "coffee_id": "6",
       "name": "Sparkling Espresso",
       "description": "Espresso meets bubbly in a caffeinated celebration.",
       "tier": "Epic",
       "origin": "American Fusion"
     },
     {
-      "coffee_id": "90",
+      "coffee_id": "7",
       "name": "Mango Tango Espresso",
       "description": "Coffee dances with a tropical mango.",
       "tier": "Epic",
       "origin": "American Fusion"
     },
     {
-      "coffee_id": "91",
+      "coffee_id": "8",
       "name": "Mandarin Orange Mocha",
       "description": "Espresso meets a tangy orange delight.",
       "tier": "Epic",
       "origin": "American Fusion"
     },
     {
-      "coffee_id": "92",
+      "coffee_id": "9",
       "name": "Kyoto Drip",
       "description": "Coffee Zen masters practice slow drip.",
       "tier": "Epic",
       "origin": "Japanese"
     },
     {
-      "coffee_id": "93",
+      "coffee_id": "10",
       "name": "Pumpkin Cheesecake Latte",
       "description": "Coffee with a slice of cheesecake.",
       "tier": "Epic",
       "origin": "American"
     },
     {
-      "coffee_id": "94",
+      "coffee_id": "11",
       "name": "Chocolate Banana Latte",
       "description": "Coffee and bananas harmonize in cocoa.",
       "tier": "Epic",
       "origin": "American"
     },
     {
-      "coffee_id": "95",
+      "coffee_id": "12",
       "name": "Caramel Apple Spice",
       "description": "Coffee with a taste of autumn orchards.",
       "tier": "Epic",
       "origin": "American"
     },
     {
-      "coffee_id": "96",
+      "coffee_id": "1",
       "name": "Root Beer Float Coffee",
       "description": "Coffee with a nostalgic soda shop twist.",
       "tier": "Legendary",
       "origin": "American"
     },
     {
-      "coffee_id": "97",
+      "coffee_id": "2",
       "name": "Lemongrass Latte",
       "description": "A spa day in a cup of coffee.",
       "tier": "Legendary",
       "origin": "American Fusion"
     },
     {
-      "coffee_id": "98",
+      "coffee_id": "3",
       "name": "Black Forest Mocha",
       "description": "A tasty drama of coffee, cherry, and chocolate.",
       "tier": "Legendary",
       "origin": "German Fusion"
     },
     {
-      "coffee_id": "99",
+      "coffee_id": "4",
       "name": "Unicorn Frappe",
       "description": "Tastes like a rainbow had a caffeine meltdown.",
       "tier": "Legendary",
       "origin": "American"
     },
     {
-      "coffee_id": "100",
+      "coffee_id": "5",
       "name": "Red Velvet Latte",
       "description": "Coffee with a fashionista's flair.",
       "tier": "Legendary",
