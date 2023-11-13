@@ -1,5 +1,7 @@
+import os
 import boto3 
 import json
+from botocore.exceptions import ClientError
 
 COFFEE_POOL_TN = os.environ['COFFEE_POOL_TABLE_NAME']
 REGION = os.environ['REGION']
@@ -17,9 +19,17 @@ def lambda_handler(event, context):
                 batch.put_item(Item=coffee)
     except ClientError as e:
         print(f'Error: {e}')
+        return {
+            'statusCode': 500,
+            'error': 'An error occurred'
+        }
     except Exception as e:
         print(f'Unexpected error: {e}')
-
+        return {
+            'statusCode': 500,
+            'error': 'An error occurred'
+        }
+        
     response = {
         'statusCode': 200,
         'headers': {
