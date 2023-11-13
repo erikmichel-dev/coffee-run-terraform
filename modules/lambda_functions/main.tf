@@ -13,21 +13,19 @@ data "archive_file" "populate_coffee_pool" {
 resource "aws_lambda_function" "daily_coffee" {
   filename         = data.archive_file.daily_coffee.output_path
   source_code_hash = data.archive_file.daily_coffee.output_base64sha256
-  role             = aws_iam_role.lambda.arn
+  role             = aws_iam_role.daily_coffee.arn
   function_name    = "daily_coffee-${var.infra_env}"
   handler          = "daily_coffee.lambda_handler"
   runtime          = "python3.11"
-  depends_on       = [aws_iam_role_policy_attachment.attach_iam_policy_to_iam_role]
 }
 
 resource "aws_lambda_function" "populate_coffee_pool" {
   filename         = data.archive_file.populate_coffee_pool.output_path
   source_code_hash = data.archive_file.populate_coffee_pool.output_base64sha256
-  role             = aws_iam_role.lambda.arn
+  role             = aws_iam_role.populate_coffee_pool.arn
   function_name    = "populate_coffee_pool-${var.infra_env}"
   handler          = "populate_coffee_pool.lambda_handler"
   runtime          = "python3.11"
-  depends_on       = [aws_iam_role_policy_attachment.attach_iam_policy_to_iam_role]
 
   environment {
     variables = {
