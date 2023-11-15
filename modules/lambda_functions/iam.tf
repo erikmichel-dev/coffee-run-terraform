@@ -24,6 +24,11 @@ resource "aws_iam_role_policy_attachment" "daily_coffee_cloudwatch_logs" {
   policy_arn = aws_iam_policy.cloudwatch_logs.arn
 }
 
+resource "aws_iam_role_policy_attachment" "daily_coffee_policy" {
+  role       = aws_iam_role.daily_coffee.name
+  policy_arn = aws_iam_policy.daily_coffee.arn
+}
+
 # Lambda function "populate_coffee_pool" role
 resource "aws_iam_role" "populate_coffee_pool" {
   name               = "lambda_populate_coffee_pool_role-${var.infra_env}"
@@ -74,6 +79,26 @@ resource "aws_iam_policy" "cloudwatch_logs" {
       "Effect": "Allow"
     }
   ]
+}
+EOF
+}
+
+# Lambda daily_coffee policy
+resource "aws_iam_policy" "daily_coffee" {
+
+  name        = "terraform_lambda_daily_coffee-${var.infra_env}"
+  path        = "/"
+  description = "AWS IAM Policy for daily_coffee lambda role"
+  policy      = <<EOF
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Action": "dynamodb:GetItem",
+			"Resource": "arn:aws:dynamodb:*:*:table/tier_list*",
+			"Effect": "Allow"
+		}
+	]
 }
 EOF
 }
