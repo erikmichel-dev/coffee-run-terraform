@@ -23,6 +23,7 @@ module "lambda_functions" {
   infra_env              = var.infra_env
   region                 = var.region
   coffee_pool_table_name = module.dynamodb_tables.coffee_pool_table_name
+  tier_list_table_name   = module.dynamodb_tables.tier_list_table_name
 }
 
 module "api_app" {

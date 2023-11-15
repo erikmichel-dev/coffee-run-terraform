@@ -17,6 +17,14 @@ resource "aws_lambda_function" "daily_coffee" {
   function_name    = "daily_coffee-${var.infra_env}"
   handler          = "daily_coffee.lambda_handler"
   runtime          = "python3.11"
+
+  environment {
+    variables = {
+      COFFEE_POOL_TABLE_NAME = var.coffee_pool_table_name
+      TIER_LIST_TABLE_NAME   = var.tier_list_table_name
+      REGION                 = var.region
+    }
+  }
 }
 
 resource "aws_lambda_function" "populate_coffee_pool" {
