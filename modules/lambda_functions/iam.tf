@@ -95,7 +95,10 @@ resource "aws_iam_policy" "daily_coffee" {
 	"Statement": [
 		{
 			"Action": "dynamodb:GetItem",
-			"Resource": "arn:aws:dynamodb:*:*:table/tier_list*",
+			"Resource": [
+        "arn:aws:dynamodb:*:*:table/tier_list*",
+        "arn:aws:dynamodb:*:*:table/coffee_pool*"
+        ],
 			"Effect": "Allow"
 		}
 	]
