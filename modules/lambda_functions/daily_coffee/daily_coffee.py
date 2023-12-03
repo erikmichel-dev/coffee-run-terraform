@@ -47,6 +47,7 @@ def lambda_handler(event, context):
     response = coffee_pool_table.get_item(Key={'coffee_id': str(random_id), 'tier': rarity})
     print(response)
     coffee_drop = response['Item']
+    coffee_drop['cost'] = int(coffee_drop['cost']) 
     
     # Create the response
     response = {
