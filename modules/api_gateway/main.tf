@@ -3,6 +3,28 @@ resource "aws_api_gateway_rest_api" "this" {
   description = "Main API for CoffeeRun App"
 }
 
+resource "aws_api_gateway_api_key" "this" {
+  name = "coffeerun-general"
+  description = "API Key for general access to coffee run api"
+}
+
+resource "aws_api_gateway_usage_plan" "this" {
+  name = "coffeerun-general"
+  description = "Usage plan for coffee run api"
+
+  api_stages {
+    api_id = aws_api_gateway_rest_api.this.id
+    stage = aws_api_gateway_stage.this.stage_name
+
+  }
+}
+
+resource "aws_api_gateway_usage_plan_key" "this" {
+  key_id = aws_api_gateway_api_key.this.id
+  key_type = "API_KEY"
+  usage_plan_id = aws_api_gateway_usage_plan.this.id
+}
+
 resource "aws_api_gateway_resource" "root" {
   rest_api_id = aws_api_gateway_rest_api.this.id
   parent_id   = aws_api_gateway_rest_api.this.root_resource_id
@@ -45,7 +67,7 @@ resource "aws_lambda_permission" "apigw_lambda" {
   ]
 }
 
-resource "aws_api_gateway_deployment" "dev" {
+resource "aws_api_gateway_deployment" "this" {
   depends_on = [
     aws_api_gateway_method.daily_coffee,
     aws_api_gateway_integration.daily_coffee
@@ -62,8 +84,8 @@ resource "aws_api_gateway_deployment" "dev" {
   }
 }
 
-resource "aws_api_gateway_stage" "dev" {
-  deployment_id = aws_api_gateway_deployment.dev.id
+resource "aws_api_gateway_stage" "this" {
+  deployment_id = aws_api_gateway_deployment.this.id
   rest_api_id   = aws_api_gateway_rest_api.this.id
-  stage_name    = "dev"
+  stage_name    = "${var.infra_env}"
 }

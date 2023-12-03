@@ -57,7 +57,7 @@ def lambda_handler(event, context):
             'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Credentials': True,
             'Access-Control-Allow-Methods': 'OPTIONS, POST, GET, PUT, DELETE',
-            'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+            'Access-Control-Allow-Headers': 'Content-Type, Authorization, x-api-key',
         },
         'body': json.dumps(coffee_drop)
     }
