@@ -38,23 +38,70 @@ resource "aws_api_gateway_resource" "daily_coffee" {
   path_part   = "daily-coffee"
 }
 
-resource "aws_api_gateway_method" "daily_coffee" {
+resource "aws_api_gateway_method" "get_daily_coffee" {
   rest_api_id   = aws_api_gateway_rest_api.this.id
   resource_id   = aws_api_gateway_resource.daily_coffee.id
   http_method   = "GET"
   authorization = "NONE"
 }
 
-resource "aws_api_gateway_integration" "daily_coffee" {
+resource "aws_api_gateway_integration" "get_daily_coffee" {
   rest_api_id = aws_api_gateway_rest_api.this.id
-  resource_id = aws_api_gateway_method.daily_coffee.resource_id
-  http_method = aws_api_gateway_method.daily_coffee.http_method
+  resource_id = aws_api_gateway_method.get_daily_coffee.resource_id
+  http_method = aws_api_gateway_method.get_daily_coffee.http_method
 
   integration_http_method = "POST"
   type                    = "AWS_PROXY"
   uri                     = var.daily_coffee_arn
 }
 
+resource "aws_api_gateway_method" "opt_daily_coffee" {
+  rest_api_id   = aws_api_gateway_rest_api.this.id
+  resource_id   = aws_api_gateway_resource.daily_coffee.id
+  http_method   = "OPTIONS"
+  authorization = "NONE"
+}
+
+resource "aws_api_gateway_integration" "opt_daily_coffee" {
+  rest_api_id = aws_api_gateway_rest_api.this.id
+  resource_id = aws_api_gateway_method.opt_daily_coffee.resource_id
+  http_method = aws_api_gateway_method.opt_daily_coffee.http_method
+  type = "MOCK"
+
+  request_templates = {
+    "application/json" = "{\"statusCode\": 200}"
+  }
+}
+
+resource "aws_api_gateway_integration_response" "opt_daily_coffee" {
+  rest_api_id = aws_api_gateway_rest_api.this.id
+  resource_id = aws_api_gateway_resource.daily_coffee.id
+  http_method = aws_api_gateway_method.opt_daily_coffee.http_method
+  status_code = aws_api_gateway_method_response.opt_daily_coffee.status_code
+
+  response_parameters = {
+    "method.response.header.Access-Control-Allow-Headers" = "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,X-Amz-User-Agent'"
+    "method.response.header.Access-Control-Allow-Methods" = "'DELETE,GET,HEAD,OPTIONS,PATCH,POST,PUT'"
+    "method.response.header.Access-Control-Allow-Origin"  = "'*'"
+  }
+}
+
+resource "aws_api_gateway_method_response" "opt_daily_coffee" {
+  rest_api_id = aws_api_gateway_rest_api.this.id
+  resource_id = aws_api_gateway_resource.daily_coffee.id
+  http_method = aws_api_gateway_method.opt_daily_coffee.http_method
+  status_code = "200"
+
+  response_models = {
+    "application/json" = "Empty"
+  }
+
+  response_parameters = {
+    "method.response.header.Access-Control-Allow-Headers" = true
+    "method.response.header.Access-Control-Allow-Methods" = true
+    "method.response.header.Access-Control-Allow-Origin" = true
+  }
+}
 
 resource "aws_lambda_permission" "apigw_lambda" {
   statement_id  = "AllowExecutionFromAPIGateway"
@@ -63,14 +110,14 @@ resource "aws_lambda_permission" "apigw_lambda" {
   principal     = "apigateway.amazonaws.com"
   source_arn    = "${aws_api_gateway_rest_api.this.execution_arn}/*/*/*"
   depends_on = [
-    aws_api_gateway_integration.daily_coffee
+    aws_api_gateway_integration.get_daily_coffee
   ]
 }
 
 resource "aws_api_gateway_deployment" "this" {
   depends_on = [
-    aws_api_gateway_method.daily_coffee,
-    aws_api_gateway_integration.daily_coffee
+    aws_api_gateway_method.get_daily_coffee,
+    aws_api_gateway_integration.get_daily_coffee
   ]
 
   rest_api_id = aws_api_gateway_rest_api.this.id
