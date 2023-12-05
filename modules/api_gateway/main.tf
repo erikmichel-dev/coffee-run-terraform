@@ -43,6 +43,7 @@ resource "aws_api_gateway_method" "get_daily_coffee" {
   resource_id   = aws_api_gateway_resource.daily_coffee.id
   http_method   = "GET"
   authorization = "NONE"
+  api_key_required = true
 }
 
 resource "aws_api_gateway_integration" "get_daily_coffee" {
@@ -80,7 +81,7 @@ resource "aws_api_gateway_integration_response" "opt_daily_coffee" {
   status_code = aws_api_gateway_method_response.opt_daily_coffee.status_code
 
   response_parameters = {
-    "method.response.header.Access-Control-Allow-Headers" = "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,X-Amz-User-Agent'"
+    "method.response.header.Access-Control-Allow-Headers" = "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'"
     "method.response.header.Access-Control-Allow-Methods" = "'DELETE,GET,HEAD,OPTIONS,PATCH,POST,PUT'"
     "method.response.header.Access-Control-Allow-Origin"  = "'*'"
   }
