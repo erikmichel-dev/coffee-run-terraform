@@ -1,0 +1,804 @@
+{
+  "coffee_pool": [
+    {
+      "coffee_id": "1",
+      "name": "Americano",
+      "description": "Perfect for caffeine lightweights.",
+      "tier": "Common",
+      "origin": "Italian American",
+      "cost": 8
+    },
+    {
+      "coffee_id": "2",
+      "name": "Cappuccino",
+      "description": "Frothy Italiano magic in a mug.",
+      "tier": "Common",
+      "origin": "Italian",
+      "cost": 11
+    },
+    {
+      "coffee_id": "3",
+      "name": "Espresso",
+      "description": "The ultimate wake-up juice.",
+      "tier": "Common",
+      "origin": "Italian",
+      "cost": 8
+    },
+    {
+      "coffee_id": "4",
+      "name": "Latte",
+      "description": "Coffee cuddles with steamed milk.",
+      "tier": "Common",
+      "origin": "Italian",
+      "cost": 10
+    },
+    {
+      "coffee_id": "5",
+      "name": "Mocha",
+      "description": "A secret love affair of chocolate and coffee.",
+      "tier": "Common",
+      "origin": "Yemeni",
+      "cost": 12
+    },
+    {
+      "coffee_id": "6",
+      "name": "Macchiato",
+      "description": "Espresso with a sassy milk drizzle.",
+      "tier": "Common",
+      "origin": "Italian",
+      "cost": 10
+    },
+    {
+      "coffee_id": "7",
+      "name": "Flat White",
+      "description": "Similar to a latte, but with a twist down under.",
+      "tier": "Common",
+      "origin": "Australian",
+      "cost": 11
+    },
+    {
+      "coffee_id": "8",
+      "name": "Ristretto",
+      "description": "Espresso's short and intense cousin.",
+      "tier": "Common",
+      "origin": "Italian",
+      "cost": 10
+    },
+    {
+      "coffee_id": "9",
+      "name": "Cold Brew",
+      "description": "Coffee's chill, laid-back surfer cousin.",
+      "tier": "Common",
+      "origin": "American",
+      "cost": 8
+    },
+    {
+      "coffee_id": "10",
+      "name": "Red Eye",
+      "description": "When one cup barely cuts it.",
+      "tier": "Common",
+      "origin": "American",
+      "cost": 11
+    },
+    {
+      "coffee_id": "11",
+      "name": "Café au Lait",
+      "description": "Coffee's Parisian milk mustache.",
+      "tier": "Common",
+      "origin": "French",
+      "cost": 9
+    },
+    {
+      "coffee_id": "12",
+      "name": "Cortado",
+      "description": "Espresso that's the milk's cool friend.",
+      "tier": "Common",
+      "origin": "Spanish",
+      "cost": 9
+    },
+    {
+      "coffee_id": "13",
+      "name": "Chai Latte",
+      "description": "Tea spices crash the coffee party.",
+      "tier": "Common",
+      "origin": "Indian Fusion",
+      "cost": 12
+    },
+    {
+      "coffee_id": "14",
+      "name": "Cuban Coffee",
+      "description": "Sweet like Havana nights, strong like Cuban coffee.",
+      "tier": "Common",
+      "origin": "Cuban",
+      "cost": 11
+    },
+    {
+      "coffee_id": "15",
+      "name": "Café de Olla",
+      "description": "Mexican coffee spiced like a fiesta.",
+      "tier": "Common",
+      "origin": "Mexican",
+      "cost": 11
+    },
+    {
+      "coffee_id": "16",
+      "name": "Iced Mocha",
+      "description": "A cool party of coffee, chocolate, and ice.",
+      "tier": "Common",
+      "origin": "American",
+      "cost": 8
+    },
+    {
+      "coffee_id": "17",
+      "name": "Vienna Iced Coffee",
+      "description": "Cold brew with Austrian vibes.",
+      "tier": "Common",
+      "origin": "Austrian",
+      "cost": 9
+    },
+    {
+      "coffee_id": "18",
+      "name": "Caramel Macchiato",
+      "description": "Espresso's secret is caramel.",
+      "tier": "Common",
+      "origin": "American",
+      "cost": 11
+    },
+    {
+      "coffee_id": "19",
+      "name": "Affogato",
+      "description": "Hot coffee meets ice cream for a melt party!",
+      "tier": "Common",
+      "origin": "Italian",
+      "cost": 12
+    },
+    {
+      "coffee_id": "20",
+      "name": "Turkish Coffee",
+      "description": "A dance of coffee beans and spices.",
+      "tier": "Common",
+      "origin": "Turkish",
+      "cost": 8
+    },
+    {
+      "coffee_id": "21",
+      "name": "Irish Coffee",
+      "description": "Coffee dances smoothly with whiskey.",
+      "tier": "Common",
+      "origin": "Irish",
+      "cost": 11
+    },
+    {
+      "coffee_id": "22",
+      "name": "Café con Leche",
+      "description": "A Spanish duet of coffee and milk.",
+      "tier": "Common",
+      "origin": "Spanish",
+      "cost": 8
+    },
+    {
+      "coffee_id": "23",
+      "name": "Coconut Mocha",
+      "description": "Coffee's romantic tropical getaway.",
+      "tier": "Common",
+      "origin": "American",
+      "cost": 11
+    },
+    {
+      "coffee_id": "24",
+      "name": "Iced Mocha",
+      "description": "A cool party of coffee, chocolate, and ice.",
+      "tier": "Common",
+      "origin": "American",
+      "cost": 11
+    },
+    {
+      "coffee_id": "25",
+      "name": "Black and White Coffee",
+      "description": "Coffee's monochrome chic sophistication.",
+      "tier": "Common",
+      "origin": "American",
+      "cost": 8
+    },
+    {
+      "coffee_id": "26",
+      "name": "Peppermint Mocha",
+      "description": "Espresso's twist of winter with peppermint.",
+      "tier": "Common",
+      "origin": "American",
+      "cost": 10
+    },
+    {
+      "coffee_id": "27",
+      "name": "Hazelnut Praline Coffee",
+      "description": "Coffee's secret party of nuts and caramel.",
+      "tier": "Common",
+      "origin": "American",
+      "cost": 12
+    },
+    {
+      "coffee_id": "28",
+      "name": "Maple Macchiato",
+      "description": "Espresso, milk, and maple in a tasty trio.",
+      "tier": "Common",
+      "origin": "American",
+      "cost": 12
+    },
+    {
+      "coffee_id": "29",
+      "name": "Gingerbread Latte",
+      "description": "Coffee with gingerbread soul.",
+      "tier": "Common",
+      "origin": "American",
+      "cost": 10
+    },
+    {
+      "coffee_id": "30",
+      "name": "Eggnog Latte",
+      "description": "A splash of holiday cheer in coffee.",
+      "tier": "Common",
+      "origin": "American",
+      "cost": 9
+    },
+    {
+      "coffee_id": "31",
+      "name": "Pumpkin Spice Latte",
+      "description": "Coffee in a cozy sweater.",
+      "tier": "Common",
+      "origin": "American",
+      "cost": 9
+    },
+    {
+      "coffee_id": "32",
+      "name": "White Chocolate Mocha",
+      "description": "Sweet, snowy romance.",
+      "tier": "Common",
+      "origin": "American",
+      "cost": 10
+    },
+    {
+      "coffee_id": "33",
+      "name": "Dirty Chai Latte",
+      "description": "Espresso's spicy friend.",
+      "tier": "Common",
+      "origin": "American Fusion",
+      "cost": 10
+    },
+    {
+      "coffee_id": "34",
+      "name": "Café Viennois",
+      "description": "Espresso crowned with a whipped cream top hat.",
+      "tier": "Common",
+      "origin": "French",
+      "cost": 12
+    },
+    {
+      "coffee_id": "35",
+      "name": "Cortadito",
+      "description": "Espresso with milk benefits.",
+      "tier": "Common",
+      "origin": "Cuban",
+      "cost": 10
+    },
+    {
+      "coffee_id": "36",
+      "name": "Cinnamon Dolce Latte",
+      "description": "Espresso with a hug of cinnamon swirl.",
+      "tier": "Common",
+      "origin": "American",
+      "cost": 8
+    },
+    {
+      "coffee_id": "37",
+      "name": "Mexican Mocha",
+      "description": "Spicy chocolate.",
+      "tier": "Common",
+      "origin": "Mexican",
+      "cost": 12
+    },
+    {
+      "coffee_id": "38",
+      "name": "Coconut Cream Latte",
+      "description": "A tropical vacation in a cup.",
+      "tier": "Common",
+      "origin": "American",
+      "cost": 9
+    },
+    {
+      "coffee_id": "39",
+      "name": "Viennese",
+      "description": "Coffee's elegant whirl.",
+      "tier": "Common",
+      "origin": "Austrian",
+      "cost": 11
+    },
+    {
+      "coffee_id": "40",
+      "name": "Bulletproof",
+      "description": "Superhero breakfast brew.",
+      "tier": "Common",
+      "origin": "American",
+      "cost": 10
+    },
+    {
+      "coffee_id": "1",
+      "name": "Thai Iced Coffee",
+      "description": "Coffee's nice combination of sugar, spice, and ice.",
+      "tier": "Uncommon",
+      "origin": "Thai",
+      "cost": 21
+    },
+    {
+      "coffee_id": "2",
+      "name": "Honey Lavender Latte",
+      "description": "Zen garden vibes with coffee.",
+      "tier": "Uncommon",
+      "origin": "American Fusion",
+      "cost": 19
+    },
+    {
+      "coffee_id": "3",
+      "name": "Brown Sugar Cinnamon Latte",
+      "description": "Coffee kisses with cinnamon toast.",
+      "tier": "Uncommon",
+      "origin": "American",
+      "cost": 19
+    },
+    {
+      "coffee_id": "4",
+      "name": "Lavender Mocha",
+      "description": "Cozy yet fancy rendezvous of chocolate and lavender.",
+      "tier": "Uncommon",
+      "origin": "American Fusion",
+      "cost": 21
+    },
+    {
+      "coffee_id": "5",
+      "name": "Lavender Iced Coffee",
+      "description": "Coffee cools off with a hint of lavender.",
+      "tier": "Uncommon",
+      "origin": "American Fusion",
+      "cost": 20
+    },
+    {
+      "coffee_id": "6",
+      "name": "Raspberry Mocha",
+      "description": "Espresso with a berry delightful twist.",
+      "tier": "Uncommon",
+      "origin": "American",
+      "cost": 18
+    },
+    {
+      "coffee_id": "7",
+      "name": "Almond Joy Latte",
+      "description": "Coffee's beach vacation with a nutty, coconut twist.",
+      "tier": "Uncommon",
+      "origin": "American",
+      "cost": 20
+    },
+    {
+      "coffee_id": "8",
+      "name": "Salted Caramel Macchiato",
+      "description": "Espresso's sweet and salty charm.",
+      "tier": "Uncommon",
+      "origin": "American",
+      "cost": 17
+    },
+    {
+      "coffee_id": "9",
+      "name": "Golden Latte",
+      "description": "Coffee embarks on a golden treasure hunt with turmeric.",
+      "tier": "Uncommon",
+      "origin": "American Fusion",
+      "cost": 19
+    },
+    {
+      "coffee_id": "10",
+      "name": "Mexican Hot Chocolate",
+      "description": "Coffee's spirited cocoa cousin.",
+      "tier": "Uncommon",
+      "origin": "Mexican",
+      "cost": 21
+    },
+    {
+      "coffee_id": "11",
+      "name": "Tuxedo Mocha",
+      "description": "Coffee's monochrome fashionista of chocolate.",
+      "tier": "Uncommon",
+      "origin": "American",
+      "cost": 22
+    },
+    {
+      "coffee_id": "12",
+      "name": "Caramel Pecan Mocha",
+      "description": "Coffee with a flair for caramel and pecans.",
+      "tier": "Uncommon",
+      "origin": "American",
+      "cost": 17
+    },
+    {
+      "coffee_id": "13",
+      "name": "Dutch Bros",
+      "description": "Wild, colorful coffee adventures.",
+      "tier": "Uncommon",
+      "origin": "American",
+      "cost": 21
+    },
+    {
+      "coffee_id": "14",
+      "name": "Café Bombón",
+      "description": "Coffee and condensed milk create fireworks.",
+      "tier": "Uncommon",
+      "origin": "Spanish",
+      "cost": 18
+    },
+    {
+      "coffee_id": "15",
+      "name": "Irish Cream",
+      "description": "Coffee with a leprechaun's creamy charm.",
+      "tier": "Uncommon",
+      "origin": "Irish",
+      "cost": 19
+    },
+    {
+      "coffee_id": "16",
+      "name": "Flat Black",
+      "description": "Espresso-charged twin of Flat White.",
+      "tier": "Uncommon",
+      "origin": "Australian",
+      "cost": 21
+    },
+    {
+      "coffee_id": "17",
+      "name": "Vienna Mélange",
+      "description": "Coffee dons a whipped cream tuxedo.",
+      "tier": "Uncommon",
+      "origin": "Austrian",
+      "cost": 20
+    },
+    {
+      "coffee_id": "18",
+      "name": "Viennese Mocha",
+      "description": "Coffee's sweet dreams wrapped in whipped cream.",
+      "tier": "Uncommon",
+      "origin": "Austrian",
+      "cost": 22
+    },
+    {
+      "coffee_id": "19",
+      "name": "Cardamom Coffee",
+      "description": "Coffee infused with the magic of cardamom spice.",
+      "tier": "Uncommon",
+      "origin": "Middle Eastern",
+      "cost": 17
+    },
+    {
+      "coffee_id": "20",
+      "name": "Maple Pecan Latte",
+      "description": "Coffee's spirited companion to pancakes.",
+      "tier": "Uncommon",
+      "origin": "American",
+      "cost": 20
+    },
+    {
+      "coffee_id": "21",
+      "name": "Ethiopian Yirgacheffe",
+      "description": "Where coffee beans dare to be fruity.",
+      "tier": "Uncommon",
+      "origin": "Ethiopian",
+      "cost": 18
+    },
+    {
+      "coffee_id": "22",
+      "name": "Toffee Nut Latte",
+      "description": "Coffee twists into a nutty, toffee embrace.",
+      "tier": "Uncommon",
+      "origin": "American",
+      "cost": 17
+    },
+    {
+      "coffee_id": "23",
+      "name": "Turkish Delight",
+      "description": "Spiced like a sultan's dream.",
+      "tier": "Uncommon",
+      "origin": "Turkish",
+      "cost": 19
+    },
+    {
+      "coffee_id": "24",
+      "name": "Red Espresso",
+      "description": "Rooibos tea and coffee find harmony.",
+      "tier": "Uncommon",
+      "origin": "South African",
+      "cost": 18
+    },
+    {
+      "coffee_id": "25",
+      "name": "Kopi Tubruk",
+      "description": "Indonesian coffee with sugar, spice, and everything nice.",
+      "tier": "Uncommon",
+      "origin": "Indonesian",
+      "cost": 22
+    },
+    {
+      "coffee_id": "1",
+      "name": "Butterscotch Caramel Latte",
+      "description": "Coffee embraces butterscotch's sweet charm.",
+      "tier": "Rare",
+      "origin": "American",
+      "cost": 28
+    },
+    {
+      "coffee_id": "2",
+      "name": "Sage Latte",
+      "description": "Coffee with a mystical, herby twist.",
+      "tier": "Rare",
+      "origin": "American Fusion",
+      "cost": 27
+    },
+    {
+      "coffee_id": "3",
+      "name": "Lemon Espresso",
+      "description": "Zesty espresso lifts your caffeine spirits.",
+      "tier": "Rare",
+      "origin": "American Fusion",
+      "cost": 28
+    },
+    {
+      "coffee_id": "4",
+      "name": "Honey Almond Latte",
+      "description": "Coffee dances with honey and nut flavors.",
+      "tier": "Rare",
+      "origin": "American",
+      "cost": 27
+    },
+    {
+      "coffee_id": "5",
+      "name": "Pineapple Espresso",
+      "description": "Espresso transforms into a tropical island escape.",
+      "tier": "Rare",
+      "origin": "American Fusion",
+      "cost": 28
+    },
+    {
+      "coffee_id": "6",
+      "name": "Tahini Espresso",
+      "description": "Espresso's nutty waltz with sesame.",
+      "tier": "Rare",
+      "origin": "Middle Eastern",
+      "cost": 25
+    },
+    {
+      "coffee_id": "7",
+      "name": "Ginger Snap Latte",
+      "description": "Coffee with a spicy ginger personality.",
+      "tier": "Rare",
+      "origin": "American",
+      "cost": 25
+    },
+    {
+      "coffee_id": "8",
+      "name": "Cherry Almond Mocha",
+      "description": "Coffee's trio of chocolate, cherry, and almond.",
+      "tier": "Rare",
+      "origin": "American",
+      "cost": 26
+    },
+    {
+      "coffee_id": "9",
+      "name": "Birthday Cake Latte",
+      "description": "Coffee is the birthday wish and the cupcake dream.",
+      "tier": "Rare",
+      "origin": "American",
+      "cost": 26
+    },
+    {
+      "coffee_id": "10",
+      "name": "S'mores Coffee",
+      "description": "Coffee's campfire experience, with marshmallows optional.",
+      "tier": "Rare",
+      "origin": "American",
+      "cost": 28
+    },
+    {
+      "coffee_id": "11",
+      "name": "Chocolate Cherry Mocha",
+      "description": "Chocolate coffee kissed by cherries.",
+      "tier": "Rare",
+      "origin": "American",
+      "cost": 27
+    },
+    {
+      "coffee_id": "12",
+      "name": "Snickers Coffee",
+      "description": "Coffee enjoys a delightful candy bar twist.",
+      "tier": "Rare",
+      "origin": "American",
+      "cost": 25
+    },
+    {
+      "coffee_id": "13",
+      "name": "Mint Chocolate Chip Mocha",
+      "description": "Coffee with a cool, minty zing.",
+      "tier": "Rare",
+      "origin": "American",
+      "cost": 27
+    },
+    {
+      "coffee_id": "14",
+      "name": "Espresso Romano",
+      "description": "Espresso zests up Italian zest with lemon.",
+      "tier": "Rare",
+      "origin": "Italian",
+      "cost": 29
+    },
+    {
+      "coffee_id": "15",
+      "name": "Lemon Poppy Seed Latte",
+      "description": "A zesty and crunchy coffee surprise.",
+      "tier": "Rare",
+      "origin": "American",
+      "cost": 28
+    },
+    {
+      "coffee_id": "16",
+      "name": "Coconut Oil Coffee",
+      "description": "Coffee finds a tropical twin.",
+      "tier": "Rare",
+      "origin": "American Fusion",
+      "cost": 26
+    },
+    {
+      "coffee_id": "17",
+      "name": "Guatemalan Antigua",
+      "description": "Coffee brings Mayan mornings in a cup.",
+      "tier": "Rare",
+      "origin": "Guatemalan",
+      "cost": 28
+    },
+    {
+      "coffee_id": "18",
+      "name": "Green Tea Latte",
+      "description": "Coffee's vibrant rendezvous with matcha.",
+      "tier": "Rare",
+      "origin": "Japanese Fusion",
+      "cost": 25
+    },
+    {
+      "coffee_id": "1",
+      "name": "Rocky Road Mocha",
+      "description": "Coffee's nutty path filled with marshmallows.",
+      "tier": "Epic",
+      "origin": "American",
+      "cost": 32
+    },
+    {
+      "coffee_id": "2",
+      "name": "Lavender Honey Latte",
+      "description": "Coffee with a heart scented by lavender.",
+      "tier": "Epic",
+      "origin": "American Fusion",
+      "cost": 30
+    },
+    {
+      "coffee_id": "3",
+      "name": "Butter Pecan Latte",
+      "description": "Coffee reveals its secret twin from Southern pecan pie.",
+      "tier": "Epic",
+      "origin": "American",
+      "cost": 33
+    },
+    {
+      "coffee_id": "4",
+      "name": "Chococcino",
+      "description": "Double the trouble with double the chocolate.",
+      "tier": "Epic",
+      "origin": "American",
+      "cost": 34
+    },
+    {
+      "coffee_id": "5",
+      "name": "Vietnamese Egg Coffee",
+      "description": "Vietnam's quirky genius combines eggs and coffee.",
+      "tier": "Epic",
+      "origin": "Vietnamese",
+      "cost": 30
+    },
+    {
+      "coffee_id": "6",
+      "name": "Sparkling Espresso",
+      "description": "Espresso meets bubbly in a caffeinated celebration.",
+      "tier": "Epic",
+      "origin": "American Fusion",
+      "cost": 35
+    },
+    {
+      "coffee_id": "7",
+      "name": "Mango Tango Espresso",
+      "description": "Coffee dances with a tropical mango.",
+      "tier": "Epic",
+      "origin": "American Fusion",
+      "cost": 33
+    },
+    {
+      "coffee_id": "8",
+      "name": "Mandarin Orange Mocha",
+      "description": "Espresso meets a tangy orange delight.",
+      "tier": "Epic",
+      "origin": "American Fusion",
+      "cost": 30
+    },
+    {
+      "coffee_id": "9",
+      "name": "Kyoto Drip",
+      "description": "Coffee Zen masters practice slow drip.",
+      "tier": "Epic",
+      "origin": "Japanese",
+      "cost": 31
+    },
+    {
+      "coffee_id": "10",
+      "name": "Pumpkin Cheesecake Latte",
+      "description": "Coffee with a slice of cheesecake.",
+      "tier": "Epic",
+      "origin": "American",
+      "cost": 34
+    },
+    {
+      "coffee_id": "11",
+      "name": "Chocolate Banana Latte",
+      "description": "Coffee and bananas harmonize in cocoa.",
+      "tier": "Epic",
+      "origin": "American",
+      "cost": 30
+    },
+    {
+      "coffee_id": "12",
+      "name": "Caramel Apple Spice",
+      "description": "Coffee with a taste of autumn orchards.",
+      "tier": "Epic",
+      "origin": "American",
+      "cost": 32
+    },
+    {
+      "coffee_id": "1",
+      "name": "Root Beer Float Coffee",
+      "description": "Coffee with a nostalgic soda shop twist.",
+      "tier": "Legendary",
+      "origin": "American",
+      "cost": 46
+    },
+    {
+      "coffee_id": "2",
+      "name": "Lemongrass Latte",
+      "description": "A spa day in a cup of coffee.",
+      "tier": "Legendary",
+      "origin": "American Fusion",
+      "cost": 47
+    },
+    {
+      "coffee_id": "3",
+      "name": "Black Forest Mocha",
+      "description": "A tasty drama of coffee, cherry, and chocolate.",
+      "tier": "Legendary",
+      "origin": "German Fusion",
+      "cost": 48
+    },
+    {
+      "coffee_id": "4",
+      "name": "Unicorn Frappe",
+      "description": "Tastes like a rainbow had a caffeine meltdown.",
+      "tier": "Legendary",
+      "origin": "American",
+      "cost": 50
+    },
+    {
+      "coffee_id": "5",
+      "name": "Red Velvet Latte",
+      "description": "Coffee with a fashionista's flair.",
+      "tier": "Legendary",
+      "origin": "American",
+      "cost": 49
+    }
+  ]
+}
