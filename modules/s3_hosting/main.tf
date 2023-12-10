@@ -3,8 +3,12 @@ locals {
   s3_domain_name = "${var.s3_name}.s3-website-${var.region}.amazonaws.com"
 }
 
+resource "random_id" "this" {
+  byte_length = 8
+}
+
 resource "aws_s3_bucket" "this" {
-  bucket = var.s3_name
+  bucket = "${var.s3_name}-${random_id.this.hex}"
 }
 
 resource "aws_s3_bucket_website_configuration" "this" {
@@ -37,7 +41,7 @@ resource "aws_cloudfront_distribution" "this" {
   enabled = true
 
   origin {
-    origin_id = local.s3_origin_id
+    origin_id   = local.s3_origin_id
     domain_name = local.s3_domain_name
     custom_origin_config {
       http_port              = 80
@@ -45,13 +49,21 @@ resource "aws_cloudfront_distribution" "this" {
       origin_protocol_policy = "http-only"
       origin_ssl_protocols   = ["TLSv1"]
     }
-  }  
+  }
 
   default_cache_behavior {
-    
+
     target_origin_id = local.s3_origin_id
     allowed_methods  = ["GET", "HEAD"]
     cached_methods   = ["GET", "HEAD"]
+
+    forwarded_values {
+      query_string = true
+
+      cookies {
+        forward = "all"
+      }
+    }
 
     viewer_protocol_policy = "redirect-to-https"
     min_ttl                = 0
@@ -64,11 +76,11 @@ resource "aws_cloudfront_distribution" "this" {
       restriction_type = "none"
     }
   }
-  
+
   viewer_certificate {
     cloudfront_default_certificate = true
   }
 
   price_class = "PriceClass_100"
-  
+
 }
