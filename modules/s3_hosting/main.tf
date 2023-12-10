@@ -3,8 +3,13 @@ locals {
   s3_domain_name = "${var.s3_name}.s3-website-${var.region}.amazonaws.com"
 }
 
+resource "random_pet" "bucket_name_suffix" {
+  length    = 2
+  separator = ""
+}
+
 resource "aws_s3_bucket" "this" {
-  bucket = var.s3_name
+  bucket = "${var.s3_name}-${random_pet.this.id}"
 }
 
 resource "aws_s3_bucket_website_configuration" "this" {
