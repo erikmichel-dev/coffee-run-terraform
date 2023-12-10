@@ -17,28 +17,19 @@ resource "aws_s3_bucket_website_configuration" "this" {
 
 resource "aws_s3_bucket_policy" "this" {
   bucket = aws_s3_bucket.this.id
-  policy = data.aws_iam_policy_document.this
-}
-
-data "aws_caller_identity" "this" {}
-
-data "aws_iam_policy_document" "this" {
-  statement {
-    principals {
-      type        = "AWS"
-      identifiers = [aws_caller_identity.this.account_id]
-    }
-
-    actions = [
-      "s3:GetObject",
-      "s3:ListBucket",
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Id      = "AllowGetObjects"
+    Statement = [
+      {
+        Sid       = "AllowPublic"
+        Effect    = "Allow"
+        Principal = "*"
+        Action    = "s3:GetObject"
+        Resource  = "${aws_s3_bucket.this.arn}/**"
+      }
     ]
-
-    resources = [
-      aws_s3_bucket.this.arn,
-      "${aws_s3_bucket.this.arn}/*",
-    ]
-  }
+  })
 }
 
 resource "aws_cloudfront_distribution" "this" {
