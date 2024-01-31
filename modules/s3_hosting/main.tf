@@ -1,15 +1,10 @@
-# locals {
-#   s3_origin_id   = "${var.s3_name}-origin"
-#   s3_domain_name = "${var.s3_name}.s3-website-${var.region}.amazonaws.com"
-# }
-
 resource "aws_cloudfront_distribution" "this" {
-  enabled = true
+  enabled             = true
   default_root_object = "index.html"
 
   origin {
-    origin_id   = aws_s3_bucket.this.bucket_regional_domain_name
-    domain_name = aws_s3_bucket.this.bucket_regional_domain_name
+    origin_id                = aws_s3_bucket.this.bucket_regional_domain_name
+    domain_name              = aws_s3_bucket.this.bucket_regional_domain_name
     origin_access_control_id = aws_cloudfront_origin_access_control.this.id
   }
 
@@ -42,7 +37,7 @@ resource "aws_cloudfront_distribution" "this" {
 }
 
 resource "aws_cloudfront_origin_access_control" "this" {
-  name                              = "${aws_s3_bucket.this.bucket}"
+  name                              = aws_s3_bucket.this.bucket
   description                       = "${aws_s3_bucket.this.bucket} Policy"
   origin_access_control_origin_type = "s3"
   signing_behavior                  = "always"
