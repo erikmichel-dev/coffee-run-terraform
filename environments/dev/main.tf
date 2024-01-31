@@ -41,3 +41,10 @@ module "dynamodb_tables" {
 
   infra_env = var.infra_env
 }
+
+module "s3_hosting" {
+  source = "../../modules/s3_hosting"
+
+  region = var.region
+  s3_name = "coffee-run-web-${var.infra_env}"
+}
