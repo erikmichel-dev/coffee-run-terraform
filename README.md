@@ -12,6 +12,7 @@ The project integrates several AWS services, ensuring a comprehensive learning e
 - **DynamoDB:** NoSQL database for storing structured data.
 - **Lambda:** Serverless computing service to run code in response to events.
 - **API Gateway:** For creating, publishing, and securing APIs.
+- **Cloudfront:** Enabling HTTPS and Origin Access Control
 
 ## CI/CD with GitHub Actions
 The deployment of the infrastructure is fully automated using GitHub Actions, providing a seamless CI/CD pipeline. This automation ensures that the infrastructure is consistently deployed and managed through code changes in the repository.
@@ -25,5 +26,12 @@ The deployment of the infrastructure is fully automated using GitHub Actions, pr
 - Project initialization.
 - Added the 'Daily Coffee Request' feature.
 - Automated creation of a DynamoDB table and data insertion.
+
+### 0.2.0
+**Release Date:** 01/02/2023
+
+**Description:**
+- Created bucket for web application files
+- Configured bucket with Cloudfront distribution, enabled OAC
 
 ---
