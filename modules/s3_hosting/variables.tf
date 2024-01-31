@@ -1,7 +1,3 @@
-variable "infra_env" {
-  description = "Current environment"
-}
-
 variable "region" {
   description = "Region used"
 }
