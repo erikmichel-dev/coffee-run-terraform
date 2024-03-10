@@ -9,3 +9,9 @@ variable "region" {
   description = "Region used"
   default     = "eu-south-2"
 }
+
+variable "domain_name" {
+  type        = string
+  description = "Domain used for the hosted zone"
+  default     = "coffeecard-brewer.dev"
+}
