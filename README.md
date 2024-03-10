@@ -29,18 +29,18 @@ The deployment of the infrastructure is fully automated using GitHub Actions, pr
 - Added the 'Daily Coffee Request' feature.
 - Automated creation of a DynamoDB table and data insertion.
 
-
-### 0.2.0 
-**Release Date:** 01/02/2024 
- 
-**Description:** 
-- Created bucket for web application files.
-- Configured bucket with Cloudfront distribution, enabled OAC.
-
 ### 0.3.0 
 **Release Date:** 10/03/2024 
  
 **Description:** 
 - Added domain from Porkbun.
 - Created and configurated Route 53 hosted zone, added and validated SSL/TLS certificate.
+
+### 0.2.0
+**Release Date:** 01/02/2023
+
+**Description:**
+- Created bucket for web application files
+- Configured bucket with Cloudfront distribution, enabled OAC
+
 ---
